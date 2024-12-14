@@ -18,10 +18,10 @@ function uploadFile() {
          const response = await axios.post('https://filesharingapplication-server.onrender.com/api/file/upload', data);
          setMessage(response.data.message);
          console.log(response.data);
-         
+
          setTimeout(()=>{
             setMessage("");
-         }, 1000);
+         }, 3000);
        } 
        catch (error) {
         console.log(error)

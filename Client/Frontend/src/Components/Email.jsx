@@ -27,6 +27,10 @@ function Email() {
                 email: "",
                 uuid: ""
             });
+
+            setTimeout(()=>{
+                setMessage("");
+            }, 3000)
         } catch (error) {
             console.error(error);
         }
