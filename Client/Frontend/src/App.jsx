@@ -23,8 +23,8 @@ async function fetchData(){
 }
 
   return (
-    <div>
-      <h1>File Sharing Application</h1>
+    <div className='w-full min-h-screen bg-violet-300 flex justify-center items-center gap-8 flex-col'>
+      <h1 className='font-bold text-5xl text-rose-900'>File Sharing Application</h1>
       <UploadFile />
       {saveData && <ListFiles files={saveData}/>}
       <Email />

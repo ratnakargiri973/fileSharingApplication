@@ -22,14 +22,15 @@ function uploadFile() {
        }
     }
   return (
-    <div>
-      <h1>Upload Files</h1>
+    <div className='flex justify-center items-center gap-4 flex-col'>
+      <h1 className='font-bold text-3xl text-teal-700'>Upload Files</h1>
       <form action="" encType="multipart/form-data" onSubmit={handleSubmit}>
       <input 
       type="file"
       name='file'
-      onChange={handleChange} />
-      <button type='submit'>Upload</button>
+      onChange={handleChange} 
+      className='outline-none rounded border-none'/>
+      <button type='submit' className='p-2 rounded bg-blue-400 hover:bg-blue-600 hover:text-white'>Upload</button>
       </form>
     </div>
   )
