@@ -14,7 +14,7 @@ function uploadFile() {
          const data = new FormData();
          data.append("file", files);
          setFiles(null);
-         const response = await axios.post('http://localhost:2001/api/file/upload', data);
+         const response = await axios.post('https://filesharingapplication-server.onrender.com/api/file/upload', data);
          console.log(response.data);
        } 
        catch (error) {

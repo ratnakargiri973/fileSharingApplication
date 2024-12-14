@@ -19,7 +19,7 @@ function Email() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:2001/api/file/sendDownloadEmail', data);
+            const response = await axios.post('https://filesharingapplication-server.onrender.com/api/file/sendDownloadEmail', data);
             console.log(response);
 
            setMessage(response.data.message);

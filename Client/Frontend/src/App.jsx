@@ -13,7 +13,7 @@ useEffect(()=>{
 
 async function fetchData(){
   try {
-    const response = await axios.get('http://localhost:2001/api/file/getAllFiles')
+    const response = await axios.get('https://filesharingapplication-server.onrender.com/api/file/getAllFiles')
     // console.log(response.data);
     setSaveData(response.data);
   } catch (error) {
