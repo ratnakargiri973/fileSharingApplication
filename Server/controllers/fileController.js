@@ -13,7 +13,7 @@ export const uploadFile = async (req, res) => {
         await dataToSend.save();
 
         res.status(201).json({
-           message: "File Upploaded Successfully",
+           message: "File Uploaded Successfully",
            filename,
            uuid,
            downloadLink : `${req.protocol}://${req.get("host")}/api/file/${uuid}`
